@@ -8,7 +8,7 @@ class Country(models.Model):
 
 
 class Cases(models.Model):
-    country = models.ForeignKey(Country, on_delete=models.CASCADE)
+    country = models.OneToOneField(Country, on_delete=models.CASCADE)
     confirmed_cases = models.IntegerField(default=0)
     death_cases = models.IntegerField(default=0)
     recovery_cases = models.IntegerField(default=0)
