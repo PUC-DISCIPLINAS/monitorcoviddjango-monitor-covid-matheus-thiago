@@ -44,7 +44,7 @@ Será exibida uma tabela com os países e seus casos de COVID-19 e um botão "Ad
 (Valores meramente ilustrativos)
 
 ### Admin
-Ao clickar no botão "Admin" será requisitado um login e uma senha.
+Ao clicar no botão "Admin" será requisitado um login e uma senha.
 
 ```bash
 #Usuário
