@@ -13,17 +13,17 @@ por meio do admin django.
 ## Execução
 
 ```bash
+# Clonar o repositório
+$ git clone https://github.com/PUC-DISCIPLINAS/monitorcoviddjango-monitor-covid-matheus-thiago.git
+
+# Entrar na pasta de código
+$ cd monitorcoviddjango-monitor-covid-matheus-thiago/covid/covidmvc
+
 # Checkando se possui django
 $ python -m django --version.
 
 # Installando o django
 $ python -m pip install Django.
-
-# Clonar o repositório
-$ git clone https://github.com/PUC-DISCIPLINAS/monitorcoviddjango-monitor-covid-matheus-thiago.git
-
-# Entrar na pasta de código
-$ cd covid/covidmvc
 ```
 
 ### Iniciando django
