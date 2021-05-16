@@ -38,13 +38,13 @@ Retorna que a aplicação foi iniciada com sucesso. Para interromper seu funcion
 ## Aplicação
 Após executada entre no link: http://127.0.0.1:8000/ no seu navegador.
 
-Será exibida uma tabela com os países e seus casos de COVID-19 e um botão "Admin" onde os dados da aplicação poderão ser manipulados. Como demonstrado a seguir: 
+Será exibida uma tabela com os países e seus casos de COVID-19 e um botão "Administrador" onde os dados da aplicação poderão ser manipulados. Como demonstrado a seguir: 
 
 ![Página principal](images/Tabeladjango.png "Página principal")
 (Valores meramente ilustrativos)
 
 ### Admin
-Ao clicar no botão "Admin" será requisitado um login e uma senha.
+Ao clicar no botão "Administrador" será requisitado um login e uma senha.
 
 ```bash
 #Usuário
