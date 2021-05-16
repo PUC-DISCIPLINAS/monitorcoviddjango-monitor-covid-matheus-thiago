@@ -1,0 +1,10 @@
+<h1>All Covid-19 cases</h1>
+{% if cases_list %}
+    <ul>
+    {% for case in cases_list %}
+        <li>{{ case.confirmed_cases }}</li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No cases.</p>
+{% endif %}
