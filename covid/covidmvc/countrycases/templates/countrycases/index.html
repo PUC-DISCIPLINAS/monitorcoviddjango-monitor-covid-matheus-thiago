@@ -1,25 +1,34 @@
-<h1>All Covid-19 cases</h1>
-{% if cases_list %}
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'countrycases/style.css' %}" />
+
+<body>
+<div>
+    <h1>All Covid-19 cases</h1>
+    <a href="{% url 'admin:index' %}"><button>Admin</button></a>
+    {% if cases_list %}
     <table>
         <thead>
-            <tr>
-                <th>País</th>
-                <th>Casos Confirmados</th>
-                <th>Mortes</th>
-                <th>Recuperados</th>
-            </tr>
+        <tr>
+            <th>País</th>
+            <th>Casos Confirmados</th>
+            <th>Mortes</th>
+            <th>Recuperados</th>
+        </tr>
         </thead>
         <tbody>
-            {% for case in cases_list %}
-            <tr>
-                <td>{{ case.confirmed_cases }}</td>
-                <td>{{ case.confirmed_cases }}</td>
-                <td>{{ case.confirmed_cases }}</td>
-                <td>{{ case.confirmed_cases }}</td>
-            </tr>
-            {% endfor %}
+        {% for case in cases_list %}
+        <tr>
+            <td>{{ case.country.country_name }}</td>
+            <td>{{ case.confirmed_cases }}</td>
+            <td>{{ case.death_cases }}</td>
+            <td>{{ case.recovery_cases }}</td>
+        </tr>
+        {% endfor %}
         </tbody>
     </table>
-{% else %}
+    {% else %}
     <p>No cases.</p>
-{% endif %}
+    {% endif %}
+</div>
+</body>
