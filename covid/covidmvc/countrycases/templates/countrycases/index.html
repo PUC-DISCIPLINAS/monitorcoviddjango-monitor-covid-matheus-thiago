@@ -1,10 +1,25 @@
 <h1>All Covid-19 cases</h1>
 {% if cases_list %}
-    <ul>
-    {% for case in cases_list %}
-        <li>{{ case.confirmed_cases }}</li>
-    {% endfor %}
-    </ul>
+    <table>
+        <thead>
+            <tr>
+                <th>País</th>
+                <th>Casos Confirmados</th>
+                <th>Mortes</th>
+                <th>Recuperados</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for case in cases_list %}
+            <tr>
+                <td>{{ case.confirmed_cases }}</td>
+                <td>{{ case.confirmed_cases }}</td>
+                <td>{{ case.confirmed_cases }}</td>
+                <td>{{ case.confirmed_cases }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
 {% else %}
     <p>No cases.</p>
 {% endif %}
