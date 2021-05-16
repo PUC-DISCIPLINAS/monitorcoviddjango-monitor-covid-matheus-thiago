@@ -26,9 +26,9 @@
         {% for case in cases_list %}
         <tr>
             <td>{{ case.country.country_name }}</td>
-            <td>{{ case.confirmed_cases }}</td>
-            <td>{{ case.death_cases }}</td>
-            <td>{{ case.recovery_cases }}</td>
+            <td class="cases">{{ case.confirmed_cases }}</td>
+            <td class="deaths">{{ case.death_cases }}</td>
+            <td class="recoveries">{{ case.recovery_cases }}</td>
         </tr>
         {% endfor %}
         </tbody>

@@ -102,3 +102,15 @@ tr {
 tbody > tr:nth-of-type(even) {
     background-color: #f9f9f8;
 }
+
+.cases {
+    color: #f0c947;
+}
+
+.deaths {
+    color: #dc4647;
+}
+
+.recoveries {
+    color: #76c035;
+}
