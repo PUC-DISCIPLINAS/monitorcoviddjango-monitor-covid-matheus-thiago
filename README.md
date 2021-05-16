@@ -13,10 +13,10 @@ por meio do admin django.
 ## Execução
 
 ```bash
-#Checkando se possui django
+# Checkando se possui django
 $ python -m django --version.
 
-#Installando o django
+# Installando o django
 $ python -m pip install Django.
 
 # Clonar o repositório
