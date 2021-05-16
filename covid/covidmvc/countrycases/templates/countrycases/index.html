@@ -1,13 +1,19 @@
 {% load static %}
 
-<link rel="stylesheet" type="text/css" href="{% static 'countrycases/style.css' %}" />
+<link rel="stylesheet" type="text/css" href="{% static 'countrycases/style.css' %}"/>
 
 <body>
 <div>
-    <h1>All Covid-19 cases</h1>
-    <a href="{% url 'admin:index' %}"><button>Admin</button></a>
+    <header class="header">
+        <h1 class="header-title">Casos de Covid-19 por país</h1>
+    </header>
+    <section class="admin">
+        <a class="admin-anchor" href="{% url 'admin:index' %}">
+            <button class="admin-button">Administrador</button>
+        </a>
+    </section>
     {% if cases_list %}
-    <table>
+    <table class="cases-table">
         <thead>
         <tr>
             <th>País</th>
